@@ -5,6 +5,24 @@
       "name": "Ritu Patel",
       "email": "ritu@gmail.com",
       "password": "abc@123"
+    },
+    {
+      "id": "6980",
+      "name": "prince",
+      "password": "abc@123",
+      "email": "prince@gmail.com"
+    },
+    {
+      "id": "6bdc",
+      "name": "preet",
+      "password": "anc@123",
+      "email": "preet@gmail.com"
+    },
+    {
+      "id": "a278",
+      "name": "john",
+      "password": "abc@123",
+      "email": "john@gmail.com"
     }
   ]
 }

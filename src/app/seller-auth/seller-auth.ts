@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Seller } from '../services/seller';
+import { Router } from '@angular/router';
+import { SignUp } from '../data-types';
 
 
 @Component({
@@ -10,16 +12,24 @@ import { Seller } from '../services/seller';
   styleUrl: './seller-auth.css'
 })
 export class SellerAuth {
-constructor(private seller:Seller){
+constructor(private seller:Seller, private router:Router){
 
 }
+   ngOnInit(): void {}
 
-  signUp(data:object):void{
-    this.seller.userSighUp(data).subscribe((result)=>{
+    signUp(data:SignUp):void{
+      console.warn(data);
+    this.seller.userSignUp(data).subscribe((result)=>{
       console.warn(result)
+      if(result){
+        this.router.navigate(['seller-home']);
 
+      }
+      
     });
+ 
+    }
 
   }
 
-}
+
